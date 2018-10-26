@@ -61,6 +61,7 @@ const onBounceClick = function () {
   }
 
 const addHandlers = () => {
+  // attention seekers
     $('.bounce').on('click', onBounceClick)
     $('.flash').on('click', onFlashClick)
     $('.pulse').on('click', onPulseClick)
@@ -70,6 +71,15 @@ const addHandlers = () => {
     $('.tada').on('click', onTadaClick)
     $('.wobble').on('click', onWobbleClick)
     $('.jello').on('click', onJelloClick)
+
+    // bouncing entrances
+    $('.bounce').on('click', onBounceClick)
+    $('.flash').on('click', onFlashClick)
+    $('.pulse').on('click', onPulseClick)
+    $('.rubberBand').on('click', onRubberBandClick)
+    $('.shake').on('click', onShakeClick)
+
+
   
   }
 
