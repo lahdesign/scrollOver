@@ -60,6 +60,42 @@ const onBounceClick = function () {
     $('.jelloDiv').addClass('animated jello');
   }
 
+     // bouncing entrances
+     const onBounceInClick = function () {
+      $('#message').text('rollOut.')
+      $('#message').css('background-Color', 'blue')
+      setTimeout(() => $('#message').text(''), 3000)
+      $('.bounceDiv').addClass('animated bounceIn');
+    }
+  
+    const onBounceInDownClick = function () {
+       $('#message').text('rollOut.')
+       $('#message').css('background-Color', 'blue')
+       setTimeout(() => $('#message').text(''), 3000)
+       $('.flashDiv').addClass('animated flash');
+     }
+  
+     const onPulseClick = function () {
+      $('#message').text('rollOut.')
+      $('#message').css('background-Color', 'blue')
+      setTimeout(() => $('#message').text(''), 3000)
+      $('.pulseDiv').addClass('animated pulse');
+    }
+  
+    const onRubberBandClick = function () {
+      $('#message').text('rollOut.')
+      $('#message').css('background-Color', 'blue')
+      setTimeout(() => $('#message').text(''), 3000)
+      $('.rubberBandDiv').addClass('animated rubberBand');
+    }
+  
+    const onShakeClick = function () {
+      $('#message').text('rollOut.')
+      $('#message').css('background-Color', 'blue')
+      setTimeout(() => $('#message').text(''), 3000)
+      $('.shakeDiv').addClass('animated shake');
+    }
+
 const addHandlers = () => {
   // attention seekers
     $('.bounce').on('click', onBounceClick)
