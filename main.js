@@ -65,35 +65,35 @@ const onBounceClick = function () {
       $('#message').text('rollOut.')
       $('#message').css('background-Color', 'blue')
       setTimeout(() => $('#message').text(''), 3000)
-      $('.bounceDiv').addClass('animated bounceIn');
+      $('.bounceInDiv').addClass('animated bounceIn');
     }
   
     const onBounceInDownClick = function () {
        $('#message').text('rollOut.')
        $('#message').css('background-Color', 'blue')
        setTimeout(() => $('#message').text(''), 3000)
-       $('.flashDiv').addClass('animated flash');
+       $('.bounceInDownDiv').addClass('animated bounceInDown');
      }
   
-     const onPulseClick = function () {
+     const onBounceInLeftClick = function () {
       $('#message').text('rollOut.')
       $('#message').css('background-Color', 'blue')
       setTimeout(() => $('#message').text(''), 3000)
-      $('.pulseDiv').addClass('animated pulse');
+      $('.bounceInLeftDiv').addClass('animated bounceInLeft');
     }
   
-    const onRubberBandClick = function () {
+    const onBounceInRightClick = function () {
       $('#message').text('rollOut.')
       $('#message').css('background-Color', 'blue')
       setTimeout(() => $('#message').text(''), 3000)
-      $('.rubberBandDiv').addClass('animated rubberBand');
+      $('.bounceInRightDiv').addClass('animated bounceInRight');
     }
   
-    const onShakeClick = function () {
+    const onbounceInUpClick = function () {
       $('#message').text('rollOut.')
       $('#message').css('background-Color', 'blue')
       setTimeout(() => $('#message').text(''), 3000)
-      $('.shakeDiv').addClass('animated shake');
+      $('.bounceInUpDiv').addClass('animated bounceInUp');
     }
 
 const addHandlers = () => {
@@ -109,14 +109,11 @@ const addHandlers = () => {
     $('.jello').on('click', onJelloClick)
 
     // bouncing entrances
-    $('.bounce').on('click', onBounceClick)
-    $('.flash').on('click', onFlashClick)
-    $('.pulse').on('click', onPulseClick)
-    $('.rubberBand').on('click', onRubberBandClick)
-    $('.shake').on('click', onShakeClick)
-
-
-  
+    $('.bounceIn').on('click', onBounceInClick)
+    $('.bounceInDown').on('click', onBounceInDownClick)
+    $('.bounceInLeft').on('click', onBounceInLeftClick)
+    $('.bounceInRight').on('click', onBounceInRightClick)
+    $('.bounceInUp').on('click', onBounceInUpClick)
   }
 
   $(() => {
