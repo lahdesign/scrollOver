@@ -1,5 +1,5 @@
 body{
-  background-image: url(moonTear.jpg);
+  background-image: url(rainbow.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -72,13 +72,13 @@ h3 {
 
 @-webkit-keyframes move {
 	from {
-	  left: 60px;
-		top: 0px; 
-  }
+		transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);}
 	to {
-	   left: 370px;
-  
+		transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
 	}
+}
   
 }
 
