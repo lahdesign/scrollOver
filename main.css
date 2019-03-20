@@ -91,9 +91,11 @@ body{
       }
   }
   
-  .button {
-    border-radius: 50%;
-    border: none;
+  button {
+    all: unset;
+    width: 200px;
+    height: 200px;
+    text-align: center;
     color: white;
     margin: 200px;
     padding: 20px;
@@ -103,4 +105,5 @@ body{
     font-size: 16px;
     margin: 4px 2px;
   }
+
   
